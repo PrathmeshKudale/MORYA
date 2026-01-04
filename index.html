@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0"/>
+  <title>E-Commerce By Discover Team</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+  <div class="rounded-nav hide-on-med-and-up">
+    <div class="rounded-nav-bg"></div>
+  </div>
+
+  <nav class="" role="navigation">
+    <div class="nav-wrapper disflex row">
+      <div class="col s8 disflex m-auto hide-on-small-and-down left-align">
+        <div class="row w-100 disflex m-auto left-align">
+          <a id="logo-container" href="#" class="m-auto col s1 w-100 brand-logo grey-text text-darken-4 text-bold">G</a>
+          <ul class="m-auto col s3 search-location">
+            <li class="w-100">
+            <form action="" method="post" class="location">
+              <div class="input-field">
+                  <input id="search" type="search" name="search" placeholder="Cari Lokasi">
+                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+              </div>
+            </form>
+            </li>
+          </ul>
+          <ul class="m-auto col s5 search-stuff">
+            <li class="w-100">
+            <form action="" method="post" class="stuff">
+              <div class="input-field">
+                  <input id="search" type="search" name="search" placeholder="Cari Barang">
+                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+              </div>
+            </form>
+            </li>
+          </ul>
+          <ul class="m-auto col s3">
+            <li class="w-100 disflex">
+              <a class="m-auto waves-effect waves-dark btn-large grey lighten-5 grey-text text-darken-4"><i class="large material-icons left grey darken-4 grey-text text-lighten-5">add</i>Jual</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col s4 disflex m-auto hide-on-small-and-down center">
+        <div class="row m-auto w-100">
+          <ul class="right col s3">
+            <li class="w-100 disflex">
+              <a href="#" class="dropdown-trigger noHover disflex m-auto" data-target='dropdown1'><i class="material-icons grey-text text-darken-5">account_circle</i><i class="material-icons arrowNav">arrow_drop_down</i></a>
+            </li>
+          </ul>
+          <ul class="right col s3">
+            <li class="w-100">
+              <a href="#"><i class="material-icons grey-text text-darken-5">favorite</i></a>
+            </li>
+          </ul>
+          <ul class="right col s3">
+            <li class="w-100">
+              <a href="#"><i class="material-icons grey-text text-darken-5">message</i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="nav-item-mobile" class="col s12 disflex m-auto hide-on-med-and-up">
+        <div class="row w-100 disflex m-auto center">
+          <a id="logo-container" href="#" class="m-auto col s2 w-100 brand-logo grey-text text-darken-4 text-bold">G</a>
+          <ul class="m-auto col s7 search-stuff">
+            <li class="w-100">
+            <form action="" method="post" class="stuff">
+              <div class="input-field">
+                  <input id="search" type="search" name="search" placeholder="Cari Barang">
+                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+              </div>
+            </form>
+            </li>
+          </ul>
+          <ul class="m-auto col s3">
+            <li class="w-100 disflex">
+              <a href="#" class="dropdown-trigger noHover disflex m-auto" data-target='dropdown2'><i class="material-icons grey-text text-darken-5">account_circle</i><i class="material-icons arrowNav">arrow_drop_down</i></a>
+            </li>
+            <!-- <li class="w-100 disflex">
+              <a class="m-auto waves-effect waves-dark btn-flat grey lighten-5 grey-text text-darken-4"><i class="large material-icons left grey-text text-darken-5">add</i>Jual</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <ul id='dropdown1' class='dropdown-content userInfo'>
+    <li><a href="#!"><i class="material-icons">person_outline</i>Profile</a></li>
+    <li><a href="#!"><i class="material-icons">chat_bubble_outline</i>Chat</a></li>
+    <li><a href="#!"><i class="material-icons">help_outline</i>Help</a></li>
+    <li class="divider" tabindex="-1"></li>
+    <li><a href="#!"><i class="material-icons">lock_outline</i>Lock</a></li>
+    <li><a href="#!"><i class="material-icons">keyboard_tab</i>Logout</a></li>
+  </ul>
+
+  <ul id='dropdown2' class='dropdown-content userInfo' class="disflex m-auto">
+    <li><a href="#!" class="disflex m-auto center"><i class="material-icons m-auto">person_outline</i><span class="m-auto">Profile</span></a></li>
+    <li><a href="#!" class="disflex m-auto center"><i class="material-icons m-auto">chat_bubble_outline</i><span class="m-auto"></span>Chat</span></a></li>
+    <li><a href="#!" class="disflex m-auto center"><i class="material-icons m-auto">help_outline</i><span class="m-auto"></span>Help</span></a></li>
+    <li><a href="#!" class="disflex m-auto center"><i class="material-icons m-auto">add</i><span class="m-auto"></span>Jual</span></a></li>
+    <li class="divider" tabindex="-1"></li>
+    <li><a href="#!" class="disflex m-auto center"><i class="material-icons m-auto">lock_outline</i><span class="m-auto"></span>Lock</span></a></li>
+    <li><a href="#!" class="disflex m-auto center"><i class="material-icons m-auto">keyboard_tab</i><span class="m-auto"></span>Logout</span></a></li>
+  </ul>
+
+  <ul id="slide-out" class="sidenav hide-on-small-and-down">
+    <div class="sideTriggerBtn">
+      <a href="#" data-target="slide-out" class="waves-effect waves-dark btn-large grey lighten-5 grey-text text-darken-4 sidenav-trigger">&nbsp;<i class="material-icons">shopping_cart</i> Cart </a>
+    </div>
+    <li>
+      <div class="location-view">
+        <div class="row center">
+          <div class="col s6">Jl Arjuna No..</div>
+          <div class="col s6"><a href="#edit"><span class="">Edit</span></a></div>
+        </div>
+        <div class="row center">
+          <div class="col s6"><i class="material-icons">access_time</i> 35 min</div>
+          <div class="col s6"><a href="#edit"><span class="">Choose time</span></a></div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="row order-list-title">
+        <b>Order List</b>
+      </div>
+      <div class="order-list-items">
+        <div class="row center">
+          <div class="col s2"><i class="material-icons">image</i></div>
+          <div class="col s2">1x</div>
+          <div class="col s6 left-align">BB Cap</div>
+          <div class="col s2">$0.3</div>
+        </div>
+        <div class="row center">
+          <div class="col s2"><i class="material-icons">image</i></div>
+          <div class="col s2">1x</div>
+          <div class="col s6 left-align">School Shoes</div>
+          <div class="col s2">$0.5</div>
+        </div>
+        <div class="row center">
+          <div class="col s2"><i class="material-icons">image</i></div>
+          <div class="col s2">2x</div>
+          <div class="col s6 left-align">Hoodie Cammo</div>
+          <div class="col s2">$0.2</div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="order-total">
+        <div class="row center">
+          <div class="col s2"><i class="material-icons">local_shipping</i></div>
+          <div class="col s8 left-align">Delivery</div>
+          <div class="col s2">$0.3</div>
+        </div>
+        <div class="row center">
+          <div class="col s2"></div>
+          <div class="col s8 left-align">Total : </div>
+          <div class="col s2"><b>$0.3</b></div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="order-confirm">
+        <div class="row right-align">
+          <div class="col s4"></div>
+          <div class="col s8"> <button class="btn waves-effect waves-dark" type="submit" name="action">Checkout
+            <i class="material-icons right">arrow_forward</i>
+          </button> </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+    <div class="carousel carousel-slider carousel-banner center " data-indicators="true">
+      <div class="middle-indicator left">
+        <a href="#prev" class="movePrevCarousel middle-indicator-text content-indicator"><i class="material-icons middle-indicator-text text-bold">chevron_left</i></a>
+      </div>
+
+      <div class="middle-indicator arrow-right">
+        <a href="#next" class="moveNextCarousel middle-indicator-text content-indicator"><i class="material-icons middle-indicator-text text-bold">chevron_right</i></a>
+      </div>
+      <div class="carousel-item white-text" href="#one!">
+        <div class="carousel-caption">
+          <h2>First Panel</h2>
+          <p class="white-text">This is your first panel</p>
+        </div>
+      </div>
+      <div class="carousel-item white-text" href="#two!">
+        <div class="carousel-caption">
+          <h2>Second Panel</h2>
+          <p class="white-text">This is your second panel</p>
+        </div>
+      </div>
+      <div class="carousel-item white-text" href="#three!">
+        <div class="carousel-caption">
+          <h2>Third Panel</h2>
+          <p class="white-text">This is your third panel</p>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+
+  <div class="promote-section hide-on-small-and-down">
+    <div class="row">
+      <div class="col s12 promote-header center"> 
+        Special Over From Tuxe-Do Studio
+      </div>
+      <div class="col s12 promote-body">
+        <div class="row">
+          <div class="col s5">
+            <img class="materialboxed" src="img/promotions-img.jpg">
+          </div>
+          <div class="col s7 center">
+            <div class="promote-caption">
+              <h5>Buy 1 Suit Get 2 Ties</h5>
+              <p>IDR 0 delivery fee for orders over IDR 100</p>
+            </div>
+            <div class="promote-more"><a href="#more"> Learn More <i class="material-icons right">arrow_forward</i>  </a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="category-section">
+    <div class="row disflex">
+      <div class="col s6 m-auto">
+        <div class="row center-on-small-only left-align m-auto">
+          <div class="col s12 m-auto">
+            <h5 class="w-100">Items</h5>
+          </div>
+          <div class="col s12 m8 l6 m-auto">
+            <div class="items-btn">
+              <div class="switch disflex">
+                <label class="disflex m-auto">
+                  <input type="checkbox" id="switchToggle">
+                  <span class="lever"></span>
+                  <span class="options first-opt"> Best Sellers </span>
+                  <span class="options second-opt"> Newest </span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m-auto">
+        <div class="row center-on-small-only right-align m-auto">
+          <div class="col s12 m12 l6 m-auto">
+            <h5 class="w-100"> Price Range <output for="range" class="output">IDR 45 - 50</output> </h5>
+          </div>
+          <div class="col s12 m12 l6 m-auto">
+            <div class="range-bar"><input id="price-range" type="range" min="5" max="100" value="50" step="5"></div>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="category-slider">
+    <div class="row disflex">
+      <div class="middle-indicator disflex m-auto">
+        <a href="#left" class="m-auto moveLeftCarousel middle-indicator-text content-indicator prev-arrow disflex">
+          <i class="material-icons middle-indicator-text text-bold m-auto">chevron_left</i>
+        </a>
+      </div>
+      <div class="my-slider">
+        <div class="col s2">
+          <div class="card  card-active">
+            <div class="card-image">
+              <img src="img/logo-all.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title center">All</span>
+            </div>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/logot-shirt.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title center">T-Shirt</span>
+            </div>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/logojacket.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title center">Jacket</span>
+            </div>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/logocap.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title center">Hats</span>
+            </div>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/logosweater.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title center">Sweater</span>
+            </div>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/logoshoes.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title center">Shoes</span>
+            </div>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/logowatch.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title center">Watch</span>
+            </div>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/logoglasses.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title center">Glasses</span>
+            </div>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/logo pants.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title center">Pants</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="middle-indicator disflex m-auto">
+        <a href="#right" class="m-auto moveRightCarousel middle-indicator-text content-indicator next-arrow disflex">
+          <i class="material-icons middle-indicator-text text-bold m-auto">chevron_right</i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="stuff-section">
+    <div class="row">
+      <div class="col s12 m4 disflex-m m-auto">
+        <div class="card row disflex-m">
+          <div class="card-image col s4 m12">
+            <img class="materialboxed" src="img/gbrcap1.png">
+            <a class="btn-floating btn-large halfway-fab disflex">
+              <i class="large material-icons m-auto">favorite</i>
+            </a>
+          </div>
+          <div class="card-content col s8 m12">
+            <div class="row">
+              <span class="card-title col s12 m9 left-align m-auto">Baseball Cap</span>
+              <div class="col m3 right-align hide-on-small-and-down">
+                <i class="material-icons">star</i> &nbsp; 4.9
+              </div>
+            </div>
+            <div class="row left-align disflex-m m-auto">
+              <div class="col s1 hide-on-med-and-up m-auto"><i class="material-icons">star</i></div>
+              <div class="col s2 hide-on-med-and-up m-auto">4.9</div>
+              <div class="col s7 m8 center m-auto">Hats, Best Sellers</div>
+              <div class="col s2 s4 right-align m-auto">IDR 50</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4 disflex-m m-auto">
+        <div class="card row disflex-m">
+          <div class="card-image col s4 m12">
+            <img class="materialboxed" src="img/gbrsepatu2.png">
+            <a class="btn-floating btn-large halfway-fab disflex">
+              <i class="large material-icons m-auto">favorite</i>
+            </a>
+          </div>
+          <div class="card-content col s8 m12">
+            <div class="row">
+              <span class="card-title col s12 m9 left-align m-auto">School Shoes</span>
+              <div class="col m3 right-align hide-on-small-and-down">
+                <i class="material-icons">star</i> &nbsp; 4.9
+              </div>
+            </div>
+            <div class="row left-align disflex-m m-auto">
+              <div class="col s1 hide-on-med-and-up m-auto"><i class="material-icons">star</i></div>
+              <div class="col s2 hide-on-med-and-up m-auto">4.9</div>
+              <div class="col s7 m8 center m-auto">Shoes, Newest</div>
+              <div class="col s2 s4 right-align m-auto">IDR 250</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4 disflex-m m-auto">
+        <div class="card row disflex-m">
+          <div class="card-image col s4 m12">
+            <img class="materialboxed" src="img/gbrjacket2.png">
+            <a class="btn-floating btn-large halfway-fab disflex">
+              <i class="large material-icons m-auto">favorite</i>
+            </a>
+          </div>
+          <div class="card-content col s8 m12">
+            <div class="row">
+              <span class="card-title col s12 m9 left-align m-auto">Hoodie Cammo</span>
+              <div class="col m3 right-align hide-on-small-and-down">
+                <i class="material-icons">star</i> &nbsp; 4.9
+              </div>
+            </div>
+            <div class="row left-align disflex-m m-auto">
+              <div class="col s1 hide-on-med-and-up m-auto"><i class="material-icons">star</i></div>
+              <div class="col s2 hide-on-med-and-up m-auto">4.9</div>
+              <div class="col s7 m8 center m-auto">Jacket, Best Sellers</div>
+              <div class="col s2 s4 right-align m-auto">IDR 200</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart-mobile hide-on-med-and-up">
+    <div class="row m-auto disflex center cart-mobile-thumbnail">
+      <div class="col s3 m-auto cart-mobile-thumb">Products 2 </div>
+      <div class="col s3 m-auto cart-mobile-thumb">Delivery IDR .4</div>
+      <div class="col s3 m-auto cart-mobile-thumb">Total IDR 3.4</div>
+      <div id="triggerCartM" class="col s2 m-auto"><i class="material-icons">keyboard_capslock</i></div>
+    </div>
+    <div class="row disflex m-auto cart-mobile-content">
+      <div class="w-100 location-view">
+        <div class="row center">
+          <div class="col s6">Jl Arjuna No..</div>
+          <div class="col s6"><a href="#edit"><span class="">Edit</span></a></div>
+        </div>
+        <div class="row center">
+          <div class="col s6"><i class="material-icons">access_time</i> 35 min</div>
+          <div class="col s6"><a href="#edit"><span class="">Choose time</span></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="row disflex cart-mobile-content">
+      <!-- <div class="disflex row">
+        <b>Order List</b>
+      </div> -->
+      <div class="m-auto col s12 order-list-items">
+        <div class="row disflex center">
+          <div class="col s2 disflex m-auto"><i class="material-icons m-auto">image</i></div>
+          <div class="col s2 m-auto">1x</div>
+          <div class="col s6 left-align m-auto">BB Cap</div>
+          <div class="col s2 m-auto">IDR 0.3</div>
+        </div>
+        <div class="row disflex center">
+          <div class="col s2 disflex m-auto"><i class="material-icons m-auto">image</i></div>
+          <div class="col s2 m-auto">1x</div>
+          <div class="col s6 left-align m-auto">School Shoes</div>
+          <div class="col s2 m-auto">IDR 0.5</div>
+        </div>
+        <div class="row disflex center">
+          <div class="col s2 disflex m-auto"><i class="material-icons m-auto">image</i></div>
+          <div class="col s2 m-auto">2x</div>
+          <div class="col s6 left-align m-auto">Hoodie Cammo</div>
+          <div class="col s2 m-auto">IDR 0.2</div>
+        </div>
+      </div>
+    </div>
+    <div class="row disflex cart-mobile-content">
+      <div class="w-100 order-total m-auto">
+        <div class="w-100 row disflex center">
+          <div class="col s2 disflex m-auto"><i class="material-icons disflex m-auto">local_shipping</i></div>
+          <div class="col s8 m-auto left-align">Delivery</div>
+          <div class="col s2 m-auto">IDR 0.3</div>
+        </div>
+        <div class="row disflex center">
+          <div class="col s2"></div>
+          <div class="col s8 m-auto left-align">Total : </div>
+          <div class="col s2 m-auto"><b>IDR 0.3</b></div>
+        </div>
+      </div>
+    </div>
+    <div class="row disflex cart-mobile-content">
+      <div class="w-100 order-confirm m-auto">
+        <div class="row disflex right-align">
+          <div class="col s4"></div>
+          <div class="col s8 disflex"> <button class="btn m-auto waves-effect waves-orange" type="submit" name="action">Checkout
+            <i class="material-icons right">arrow_forward</i>
+          </button> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/script.js"></script>
+
+  </body>
+</html>

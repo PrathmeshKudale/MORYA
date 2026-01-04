@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/wishlist.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style>
+    body span {
+      color: #2c205c !important;
+      text-shadow: 2px 2px 1px white;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/27936ba74c.js"></script>
+</head>
+<body>
+  <nav class="purple" role="navigation">
+    <div class="nav-wrapper">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger" style="margin: 10px;"><i class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down search-location">
+        <li>
+        <form action="" method="post" class="location">
+          <div class="input-field">
+              <input id="search" type="search" name="search" placeholder="Cari Lokasi">
+              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          </div>
+        </form>
+        </li>
+      </ul>
+      <ul class="left hide-on-med-and-down search-stuff">
+        <li>
+        <form action="" method="post" class="stuff">
+          <div class="input-field">
+              <input id="search" type="search" name="search" placeholder="Cari Barang">
+              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          </div>
+        </form>
+        </li>
+      </ul>
+      <ul class="left hide-on-med-and-down">
+        <li>
+          <a class="waves-effect waves-dark btn-large grey lighten-5 grey-text text-darken-4"><i class="material-icons left grey darken-4 grey-text text-lighten-5">add</i>Jual</a>
+        </li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <i class="material-icons grey-text text-darken-5" style="float: left;">account_circle</i><a href="#" class="dropdown-trigger noHover" data-target='dropdown1'><i class="material-icons right arrowNav">arrow_drop_down</i></a>
+          <!-- <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a> -->
+        </li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <i class="material-icons grey-text text-darken-5">message</i>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Shop</a></li>
+    <li><a href="#">Iklan</a></li>
+    <li><a href="#">Wishlist</a></li>
+  </ul>
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content userInfo'>
+    <li><a href="#!"><i class="material-icons">person_outline</i>Profile</a></li>
+    <li><a href="#!"><i class="material-icons">chat_bubble_outline</i>Chat</a></li>
+    <li><a href="#!"><i class="material-icons">help_outline</i>Help</a></li>
+    <li class="divider" tabindex="-1"></li>
+    <li><a href="#!"><i class="material-icons">lock_outline</i>Lock</a></li>
+    <li><a href="#!"><i class="material-icons">keyboard_tab</i>Logout</a></li>
+  </ul>
+  
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <div class="row setting">
+        <div class="col s12 m4 category-search">
+          <div class="row">
+            <div class="col s6 m10">
+              <div class="items-btn">
+                <div class="switch disflex">
+                  <label class="disflex m-auto">
+                    <input type="checkbox" id="switchToggle">
+                    <span class="lever"></span>
+                    <span class="options second-opt"> Iklan </span>
+                    <span class="options first-opt"> Favorit </span>
+                  </label>
+                </div>
+              </div>
+            </div> 
+            <div class="col s6 m12">
+              <form action="" method="post" class="stuff">
+                <div class="input-field">
+                    <input id="search" type="search" name="search" placeholder="Cari Berdasar Judul">
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                </div>
+              </form>
+            </div>
+        </div>
+        
+        
+      </div>
+      <div class="col s12 m3">
+        <span class="acc_balance">Account Balance</span>
+        <span class="idr">IDR 9.000.000</span>
+      
+      </div>
+        <div class="col s12 m5" style="text-align: center;">
+          <div class="col s6 m6"> <span class="iklan-active">Prioritas Tertinggi</span></div>
+          <div class="col s6 m6">Prioritas Terendah</div>
+          <div class="row price-range">
+            <div class="col s6">
+              <h4> Price Range <output for="range" class="output">$45 - $50</output> </h4>
+            </div>
+            <div class="col s6">
+              <div class="range-bar"><input id="price-range" type="range" min="5" max="100" value="50" step="5"></div>            
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m6 iklan-product">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/gbrtshirt.png">
+              <div class="badge-category center">
+                    <span>Baju</span>
+              </div>
+              <div class="badge-fav">
+                <span><i class="material-icons">favorite</i></span>
+              </div>
+              <div class="title-desc">
+                <span class="card-title title-desc">Baju Hitam</span>
+                <span class="card-title card-desc title-desc">Baju hitam cocok untuk tidur</span>
+              </div>
+              
+            </div>
+            <div class="card-content">
+              <div class="price-section left">
+                <span class="card-title title-desc">Harga</span>
+                <p class="price">Rp. 5.000,00</p>
+              </div>
+              <div class="rating right">
+                <span class="card-title title-desc center">Rating</span>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons ">star</i>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 iklan-product">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/gbrtshirt2.png">
+              <div class="badge-category center">
+                    <span>Baju</span>
+              </div>
+              <div class="badge-fav">
+                <span><i class="material-icons">favorite</i></span>
+              </div>
+              <div class="title-desc">
+                <span class="card-title title-desc">Baju Polos</span>
+                <span class="card-title card-desc title-desc">untuk istirahat</span>
+              </div>
+              
+            </div>
+            <div class="card-content">
+              <div class="price-section left">
+                <span class="card-title title-desc">Harga</span>
+                <p class="price">Rp. 5.000,00</p>
+              </div>
+              <div class="rating right">
+                <span class="card-title title-desc center">Rating</span>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons ">star</i>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="row">
+        <div class="col s12 m6 iklan-product">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/gbrcap1.png">
+              <div class="badge-category center">
+                    <span>Topi</span>
+              </div>
+              <div class="badge-fav">
+                <span><i class="material-icons">favorite</i></span>
+              </div>
+              <div class="title-desc">
+                <span class="card-title title-desc">Topi Merah</span>
+                <span class="card-title card-desc title-desc">Untuk bergaya</span>
+              </div>
+              
+            </div>
+            <div class="card-content">
+              <div class="price-section left">
+                <span class="card-title title-desc">Harga</span>
+                <p class="price">Rp. 5.000,00</p>
+              </div>
+              <div class="rating right">
+                <span class="card-title title-desc center">Rating</span>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons ">star</i>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 iklan-product">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/logot-shirt.png">
+              <div class="badge-category center">
+                    <span>baju</span>
+              </div>
+              <div class="badge-fav">
+                <span><i class="material-icons">favorite</i></span>
+              </div>
+              <div class="title-desc">
+                <span class="card-title title-desc">Baju Kuning</span>
+                <span class="card-title card-desc title-desc">cocok untuk non formal</span>
+              </div>
+              
+            </div>
+            <div class="card-content">
+              <div class="price-section left">
+                <span class="card-title title-desc">Harga</span>
+                <p class="price">Rp. 5.000,00</p>
+              </div>
+              <div class="rating right">
+                <span class="card-title title-desc center">Rating</span>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons ">star</i>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+    </div>
+    <div class="container pag center">
+      <ul class="pagination">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+      </ul>
+    </div>
+    <br><br>
+  </div>
+  
+  
+  
+
+  <footer class="page-footer purple lighten-3">
+    <div class="container">
+      <div class="row foot-list">
+        <div class="col s12 m6 info">
+          <ul class="left-align">
+            <li class="black-text left-align footer-list">Search</li>
+            <li class="black-text left-align footer-list">Privacy Policy</li>
+            <li class="black-text left-align footer-list">Terms of Use</li>
+            <li class="black-text left-align footer-list">Refund Policy</li>
+          </ul>
+        </div>
+        <div class="col s12 m6">
+          <ul>
+            <li class="right-align black-text">Created by Discover Team</li>
+          </ul>
+        </div>
+      <div class="row cc">
+        <div class="col s12 m6">
+          <ul>
+            <li><i class="fab fa-cc-visa fa-2x"></i></li>
+            <li><i class="fab fa-cc-discover fa-2x"></i></li> 
+            <li><i class="fab fa-cc-apple-pay fa-2x"></i></li>
+            <li><i class="fab fa-cc-amex fa-2x"></i></li>
+            <li><i class="fab fa-cc-mastercard fa-2x"></i></li>
+          </ul>
+        </div>
+        <div class="col s12 m6">
+          <ul class="right-align">
+            <li class="right-align"><i class="fab fa-facebook-square fa-2x"></i></li>
+            <li class="right-align"><i class="fab fa-instagram fa-2x"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+  </script>
+  </body>
+</html>
